@@ -356,7 +356,7 @@ public class MainActivity extends AppCompatActivity {
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
-                Toast.makeText(MainActivity.this,"song completion event",Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this,"song completion event",Toast.LENGTH_SHORT).show();
                 songSkipForward();
             }
         });
@@ -1264,7 +1264,7 @@ public class MainActivity extends AppCompatActivity {
     {
         int i = 0;
 
-        Toast.makeText(MainActivity.this,"skip backward click",Toast.LENGTH_SHORT).show();
+        //Toast.makeText(MainActivity.this,"skip backward click",Toast.LENGTH_SHORT).show();
 
         ImageView skip = findViewById(R.id.skipBack);
         Animation backAnimation = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.backward);
@@ -1326,7 +1326,7 @@ public class MainActivity extends AppCompatActivity {
     {
         int i = 0;
 
-        Toast.makeText(MainActivity.this,"skip forward click",Toast.LENGTH_SHORT).show();
+        //Toast.makeText(MainActivity.this,"skip forward click",Toast.LENGTH_SHORT).show();
 
         ImageView skip = findViewById(R.id.skipforward);
         Animation forwardAnimation = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.forward);
@@ -1724,7 +1724,7 @@ public class MainActivity extends AppCompatActivity {
     public static class skipBackListener extends BroadcastReceiver {
         @Override
         public void onReceive(Context context, Intent intent) {
-            Toast.makeText(context, "Skip forward click", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(context, "Skip forward click", Toast.LENGTH_SHORT).show();
             //songSkipBack();
         }
     }
@@ -1733,7 +1733,7 @@ public class MainActivity extends AppCompatActivity {
     public static class pauseListener extends BroadcastReceiver {
         @Override
         public void onReceive(Context context, Intent intent) {
-            Toast.makeText(context, "Pause click", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(context, "Pause click", Toast.LENGTH_SHORT).show();
             //togglePause();
         }
     }
@@ -1742,7 +1742,7 @@ public class MainActivity extends AppCompatActivity {
     public static class skipForwardListener extends BroadcastReceiver {
         @Override
         public void onReceive(Context context, Intent intent) {
-            Toast.makeText(context, "Skip back click", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(context, "Skip back click", Toast.LENGTH_SHORT).show();
             //songSkipForward();
         }
     }
